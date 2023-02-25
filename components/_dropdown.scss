@@ -1,0 +1,8 @@
+@use './_helpers.scss/color' ;
+
+
+.dropdown {
+    @include Flex( flex , row column , left , center , 1rem ) ;
+    @include list( 'Opcion 1' , 'Opcion' ) ;
+
+}

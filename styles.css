@@ -1,0 +1,19 @@
+/* Error: Can't find stylesheet to import.
+ *   ,
+ * 1 | @use './_helpers.scss/color' ;
+ *   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ *   '
+ *   components/_dropdown.scss 1:1  @import
+ *   components/_all.scss 7:9       @import
+ *   styles.scss 7:9                root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @use './_helpers.scss/color' ;\a   \2502  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   components/_dropdown.scss 1:1  @import\a   components/_all.scss 7:9       @import\a   styles.scss 7:9                root stylesheet";
+}
